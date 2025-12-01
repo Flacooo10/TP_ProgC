@@ -10,17 +10,16 @@ int main() {
 
     printf("Suite de Fibonacci jusqu'à U%d :\n", n);
 
-    for(i = 0; i <= n; i++) {
-        if(i == 0) {
-            printf("%d ", u0);
-        } else if(i == 1) {
-            printf("%d ", u1);
-        } else {
-            un = u0 + u1;  // Calcul du terme suivant
-            printf("%d ", un);
-            u0 = u1;       // Mise à jour des termes précédents
-            u1 = un;
-        }
+    // Afficher les deux premiers termes
+    if (n >= 0) printf("%d ", u0);
+    if (n >= 1) printf("%d ", u1);
+
+    // Calculer et afficher les termes suivants
+    for(i = 2; i <= n; i++) {
+        un = u0 + u1;  // Calcul du terme suivant
+        printf("%d ", un);
+        u0 = u1;       // Mise à jour des termes précédents
+        u1 = un;
     }
 
     printf("\n");
