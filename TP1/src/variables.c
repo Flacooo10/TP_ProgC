@@ -2,27 +2,43 @@
 
 int main() {
 
-    // char
-    signed char s_char = -50;
-    unsigned char u_char = 200;
+    signed char c1 = -10;
+    unsigned char c2 = 200;
 
-    // short
-    signed short s_short = -30000;
-    unsigned short u_short = 60000;
+    signed short s1 = -300;
+    unsigned short s2 = 600;
 
-    // int
-    signed int s_int = -123456;
-    unsigned int u_int = 123456;
+    signed int i1 = -20000;
+    unsigned int i2 = 40000;
 
-    // long int
-    signed long int s_long = -1234567890L;
-    unsigned long int u_long = 1234567890UL;
+    signed long int li1 = -500000;
+    unsigned long int li2 = 500000;
 
-    // long long int
-    signed long long int s_ll = -1234567890123LL;
-    unsigned long long int u_ll = 1234567890123ULL;
+    signed long long int lli1 = -9000000000;
+    unsigned long long int lli2 = 9000000000U;
 
-    // flottants
     float f = 3.14f;
-    double d = 3.14159265;
-    long doub
+    double d = 6.28;
+    long double ld = 12.56;
+
+    printf("signed char : %d\n", c1);
+    printf("unsigned char : %u\n", c2);
+
+    printf("signed short : %d\n", s1);
+    printf("unsigned short : %u\n", s2);
+
+    printf("signed int : %d\n", i1);
+    printf("unsigned int : %u\n", i2);
+
+    printf("signed long int : %ld\n", li1);
+    printf("unsigned long int : %lu\n", li2);
+
+    printf("signed long long int : %lld\n", lli1);
+    printf("unsigned long long int : %llu\n", lli2);
+
+    printf("float : %f\n", f);
+    printf("double : %f\n", d);
+    printf("long double : %Lf\n", ld);
+
+    return 0;
+}
